@@ -1,3 +1,140 @@
 This is the first file created.
 
 update
+
+
+Manual Testing?
+    Writing and executing the testcase without any help of tool support.
+    Test case document will have the steps.
+
+Automation testing:
+    write and execute test script  with help of tool. eg: selenium
+
+What is Testing?  process of evaluating a system.
+
+who does the  testing?
+   1. devloper will also do testing that is called as unit testing.
+   2. Manager will also do testing that is called as exploratory testing.
+   3. user will also do that is called UAT- User Acceptance Testing
+
+When to do the testing?
+    => Bulid Ready.
+    => Once the test case document is written and approved we can perform testing.
+    => Setup the environment.
+    => Test Data.
+    => In the inital stage of SDLC
+
+When to stop the Testing?
+    => When all the test case are executed and ther is no high severity and high preority defect.
+    => Management decides to stop testing.
+
+Different  between Testing and de-bugging:
+     => Testing is the process to find defect without correcting (Done by Tester)
+     => Debugging is to find the defect and correct the code (Done by developer)
+
+SDLC - Software Development life Cycle.
+--------------------------------------
+Stuctured process -6 phases
+To deliver a high quality product, with low cost and in the shorest possiable duration of time.
+
+1.Requirment Analysis and Planing:
+
+     BA - Business analysit -> They will collect all the details from the client and prepare a document called
+          BRS ( Business Requirment specification)
+     BA's will conduct meeting with Tech leads and discuss about the requirment
+     only if the Tech leads are ok, they will prepare 
+
+     1.FRS(Functional Requirement Specification) -> It contains all the functionality details e.g:Login Functionlity ,sign up functionality
+     2.SRS(Software Requirement Specification) -> What needs in login functionality , like what fields needs to be present.
+        once the SRS Document is ready, we can start writting the test case.
+
+2.Design:
+
+      During this phase 2 documents will be prepared 
+         1.HLD(High Level Desgin Document)
+            => Contains overall architecture
+            => Prepared by Domain expert ( Solution Architect)
+            => They will also design table and Database as well
+
+         2. LLD (low level design document)
+            =>Convert all the high level information to low level i.e: detailed description
+
+3.Development:
+
+     => Development  Team write the code and once the bulid is ready it will be given to testing team.
+
+4.Testing:
+       Tester will do End- to-End testing.
+       STLC- Software TEsting Lifecycle.
+
+5.Deployment
+
+6.Maintenance phase
+
+
+1.Req analysis:
+
+BA  -->collects the req from the client and analyse it
+BRS --> Business Req Specification document -->prepared by BA
+BRS contains all the business req's which is collected from the client
+
+BA conduct a meeeting with the technical leads, discuss about the req's with them.
+If the technical leads have some doubts they will clarify with the BA.
+Once the technical leads are ok with the req's they will prepare 2 documents:
+1.FRS  -->  Functional Req Specification document which contains all the functionalities explained in a detailed way
+in a flow chart representation
+
+FRS is an answer for how to reach the expectancy of BRS. 
+
+ex: Gmail app  --->  Login, Home page, compose email, sent mail, trash,spam,starred,outbox,primary,social, etc.,
+
+2.SRS  --> Software Req Specification document
+
+Field specification --> In the functionality each field gets described in a detailed way:
+1.Login
+In the login, UN,PWD,forgot password these are the fields available.These fields gets described in a detailed way:
+
+i)User name --> It is mandatory field which contains email address(which should be valid)
+ii)Password  --> It is a mandatory field that should be strong which should accepts only 6 to 13 chars
+
+2. Home page
+IT should contains all the modules(compose email,promotion etc)
+
+BAsed on SRS, testers starts writing the test cases.
+
+2. Design:
+
+i) HLD --> High level design
+
+Macro level design document
+Prepared by domain expert(Solution Architect)
+They convert business req's in to high level solutions
+IT contains the over all architecture of an application
+
+With the help of HLD, they will design a table, design a database
+
+ii)LLD --> Low level design
+
+Micro level design document
+Prepared by designers 
+They convert  high level solutions in to detailed solutions
+IT contains the detailed description about each n every modeules of an application
+With the help of LLD, they will get program or code specification.
+
+3.Development:
+With the help of program or code specification and SRS, the dev start writing the codes and develop an application
+100 modules -- > 10 developers
+divide the task -->10 x 10 -->100
+OnceUnit testing is completed by the dev they will send it to the testing team.
+
+4.Testing:
+   login -->functionality,feature,module  -->all are same
+  Once the testing team get an app from dev team. they start testing by executing the test cases (for manual)
+they start testing by executing the test scripts (for automation)
+
+While executing the test cases, they find defects (failed test case)
+Once they find have to assigned it to the dev team(developers)
+DEv team should fix the defects/bugs.once all the bugs gets fixed they send it to the testing team.
+The testers have to test it again (Re-testing) 
+This process gets continues till all the bugs gets fixed and there is no high priority bugs.
+Once the testing team feels an application is stable and it is defect free, they can send it to the deployment team.
